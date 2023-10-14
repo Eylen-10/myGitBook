@@ -15,7 +15,7 @@ function getMdFiles(dir, parent) {
   return fileList;
 }
 function getGroup(pre){
-  fs.readdirSync(path.resolve(__dirname, pre))
+  return fs.readdirSync(path.resolve(__dirname, pre))
     .filter(filePath => !filePath.includes('.vuepress') && fs.statSync(path.join(path.resolve(__dirname, pre), filePath)).isDirectory());
 }
 function generateRoutes(){
@@ -31,4 +31,5 @@ function generateRoutes(){
   }
   return routes;
 }
-module.exports = generateRoutes();
+let routes = generateRoutes()
+module.exports = routes;
