@@ -1,11 +1,15 @@
 {
   "scripts": {
     "dev": "vuepress dev docs",
-    "build:": "vuepress build docs"
+    "build": "vuepress build docs"
   },
   "devDependencies": {
+    "@vuepress/theme-blog": "^2.3.3",
     "markdown-it-disable-url-encode": "^1.0.1",
     "vuepress": "^1.9.10",
     "vuepress-plugin-fulltext-search": "^2.2.1"
+  },
+  "dependencies": {
+    "vuepress-plugin-code-copy": "^1.0.6"
   }
 }

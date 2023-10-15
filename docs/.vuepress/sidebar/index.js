@@ -25,7 +25,7 @@ function generateRoutes(pre='../../'){
     let list = getMdFiles(path.join(path.resolve(__dirname, pre), dir), dir)
     routes.push({
       title: dir,
-      collapsable: false,
+      collapsable: true,
       children: list
     })
   }
