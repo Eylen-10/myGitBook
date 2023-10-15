@@ -11,15 +11,16 @@ cd docs/.vuepress/dist
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
-
 git init
 git add -A
 git commit -m 'deploy'
-
+git remote add origin git@github.com:Eylen-10/myBlog.git
+git checkout -b main
 # 如果发布到 https://<USERNAME>.github.io
-# git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
-
+git push --force origin main
+# git push -f https://Eylen-10.github.io/myBlog.git main:gh-pages
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+# 如果发布到 https://Eylen-10.github.io/myBlog.git main:gh-pages
+# git push -f git@github.com:Eylen-10/myBlog.git main:gh-pages
 
 cd -

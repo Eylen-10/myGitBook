@@ -1,7 +1,8 @@
 {
   "scripts": {
     "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "build": "vuepress build docs",
+    "deploy": "bash ./deploy.sh"
   },
   "devDependencies": {
     "@vuepress/theme-blog": "^2.3.3",

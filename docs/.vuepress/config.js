@@ -2,7 +2,7 @@ var generateRoutes = require('./sidebar/index.js')
 let routes = generateRoutes('../../')
 
 module.exports = {
-  base:'/myGitBook/',
+  base:'/myBlog/',
   title:"🎈 Eylen's Blog",
   // theme: '@vuepress/blog',
   markdown: {
