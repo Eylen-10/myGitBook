@@ -10,7 +10,7 @@ function generateRoutes(pre='../../'){
       if(!file.includes('.md')) return;
       const filePath = path.join(dir, file);
       let relative = path.relative(dir, filePath).replace(/\.md$/, '').replace(/\\/g, '/');
-      fileList.push(`/${parent}/${relative}`);
+      fileList.push(encodeURI(`/${parent}/${relative}`));
     });
   
     return fileList;
