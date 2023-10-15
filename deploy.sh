@@ -16,11 +16,6 @@ git add -A
 git commit -m 'deploy'
 git remote add origin git@github.com:Eylen-10/myBlog.git
 git checkout -b main
-# 如果发布到 https://<USERNAME>.github.io
 git push --force origin main
-# git push -f https://Eylen-10.github.io/myBlog.git main:gh-pages
-# 如果发布到 https://<USERNAME>.github.io/<REPO>
-# 如果发布到 https://Eylen-10.github.io/myBlog.git main:gh-pages
-# git push -f git@github.com:Eylen-10/myBlog.git main:gh-pages
 
 cd -
