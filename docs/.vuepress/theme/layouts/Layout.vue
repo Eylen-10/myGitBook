@@ -41,6 +41,7 @@
       </template>
     </Page>
     <div class="sidebar article-directories ">
+      <h3 class="header" v-if="pageDir.length">目录</h3>
       <RouterLink
       v-for="item in pageDir" :key="item.charIndex"
       :class="{
@@ -51,14 +52,6 @@
     >
       <span>{{ item.title }}</span>
     </RouterLink>
-      <!-- <li v-for="item in pageDir" :key="item.charIndex">
-        <a 
-          :href="item.path" 
-          :class="{
-          'active': isActive($route, item.path)}">
-        {{ item.title }}
-      </a>
-      </li> -->
     </div>
   </div>
 </template>

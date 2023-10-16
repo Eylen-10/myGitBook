@@ -26,6 +26,7 @@ function generateRoutes(pre='../../'){
     routes.push({
       title: dir,
       collapsable: true,
+      sidebarDepth: 0,
       children: list
     })
   }
